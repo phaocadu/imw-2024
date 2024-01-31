@@ -1,0 +1,55 @@
+.monospace {
+    font-family: monospace;
+}
+
+.adobe-font {
+    font-family: "quirkwood-chunky", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.google-font {
+    font-family: "Arvo", serif;
+
+    &:hover {
+        animation-name: slide-right;
+        animation-duration: 1s;
+    }
+}
+
+span {
+    display: block;
+}
+
+@font-face {
+    font-family: 'Bespoke';
+    src: url('fonts/Bespoke-LmjB7M8E6t.eot');
+    src: url('fonts/Bespoke-LmjB7M8E6t.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Bespoke-LmjB7M8E6t.woff') format('woff'),
+        url('fonts/Bespoke-LmjB7M8E6t.ttf') format('truetype'),
+        url('fonts/Bespoke-LmjB7M8E6t.svg#Bespoke-LmjB7M8E6t') format('svg');
+}
+
+.self-hosted {
+    font-family: 'Bespoke', sans-serif;
+    transition: color 750ms, transform 750ms;
+
+    &:hover {
+        color: red;
+        transform: translateX(100px);
+    }
+}
+
+@keyframes slide-right {
+    to {
+        transform: translateX(0);
+    }
+
+    from {
+        transform: translateX(10px);
+    }
+}
+
+/* .self-hosted:hover {
+    color: red;
+} */
